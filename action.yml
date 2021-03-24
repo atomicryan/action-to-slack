@@ -1,0 +1,15 @@
+name: "Send message to a slack channel"
+description: "Sends a message to a slack channel based on the incoming webhook"
+inputs:
+  details:
+    description: "Any other useful details?"
+    required: false
+  button-url:
+    description: "URL for any a button in the message"
+    required: false
+  slack-webhook:
+    description: "Webhook for communicating with slack"
+    required: true
+runs:
+  using: "node12"
+  main: "dist/index.js"
